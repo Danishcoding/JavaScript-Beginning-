@@ -45,8 +45,8 @@ console.log(`----------------------------------------------------------`)
 let text = "Hello"
 let num3 = 123
 
-let check_string = text.isNaN() 
-let check_number = num3.isNaN()
+let check_string = isNaN(text) 
+let check_number = isNaN(num3)
 
 console.log(`This text is number check ${check_string}`)
 console.log(`This number is number check ${check_number}`)
@@ -59,8 +59,8 @@ console.log(`----------------------------------------------------------`)
 let str = "120.23"
 let str2 = `abc`
 
-let str_into_int = str.parseInt()
-let str2_into_int = str2.parseInt()
+let str_into_int = parseInt(str)
+let str2_into_int = parseInt(str2)
 
 console.log(`The return on this parseInt() of string value of the 123.12 ${str_into_int} and the return on this parseInt() of string value is abc ${str2_into_int} `)
 
@@ -69,12 +69,18 @@ console.log(`----------------------------------------------------------`)
 // 03 - parseFloat()
 // Description: Converts String to Float
 
-let str_into_float = str.parseFloat()
-let str2_into_float = str2.parseFloat()
+let str_into_float = parseFloat(str)
+let str2_into_float = parseFloat(str2)
 
 console.log(`The return on this parseFloat() of string value of the 123.12 ${str_into_float} and the return on this parseFloat() of string value is abc ${str2_into_float} `)
 
 console.log(`----------------------------------------------------------`)
 
-// 03 - parseFloat()
-// Description: Converts String to Float
+// 03 - Tofixed()
+// Description: Round the number to given decimal Place.
+
+let cycle_price = 200
+
+let round_up = cycle_price.toFixed(2);
+
+console.log(`Before old float number ${old_year} and After new float number ${round_off}`);
